@@ -1,0 +1,4 @@
+.pynb_checkpoints/
+white_notes.txt
+__pycache__/
+*.pkl

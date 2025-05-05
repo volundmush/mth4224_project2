@@ -1,0 +1,9 @@
+Standard scaler:
+
+1. Min-max will scale values to always be between 0 and 1. But, the data organizing as lines in PCA doesn't make sense. Should drill down and determine where the lines come from.
+
+2. Do DBSCAN clustering and then get basic summary statistics about each cluster. And also in each cluster, there may be a higher amount of phishing than non-phishing. Any understanding of the summary statistics is valuable to show. As long as a higher percentage than the whole dataset, then this is a relevant cluster.
+
+3. One way to remove columns: each component of PCA is a linear combination of features (x*f1 + y*f2 + ...). So, look at what features are weighted most heavily for each PCA component (called PCA loadings). This could be used to remove the features that aren't relevant; PCA seems to extract what is important. You could do a bar graph of the different coefficients for the different features in each component.
+
+We can submit a report detailing what to do by Wednesday on Monday. Then, afterwards submit a completed report with all diagrams.
